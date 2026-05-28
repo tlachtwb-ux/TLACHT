@@ -1,0 +1,367 @@
+/* ============================================================ */
+/* PROJECT.CSS — Estilos de la plantilla de proyecto            */
+/* Se carga DESPUÉS de styles.css, así que hereda todo          */
+/* ============================================================ */
+
+/* ============================================================ */
+/* HEADER MODIFICADO — botón Volver a la izquierda              */
+/* ============================================================ */
+.header {
+    justify-content: space-between;  /* back-btn izquierda, lang-switcher derecha */
+    align-items: center;
+}
+
+.back-btn {
+    font-family: 'Crimson Text', serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #8E8E8E;
+    text-decoration: none;
+    text-transform: uppercase;
+    pointer-events: auto;
+    transition: color 0.3s ease;
+    padding: 0.3rem 0;
+}
+
+.back-btn:hover {
+    color: #E8E2D5;
+}
+
+/* ============================================================ */
+/* ANIMACIÓN REVEAL ON SCROLL (slide up)                        */
+/* ============================================================ */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================================================ */
+/* BLOQUE 1: META DEL PROYECTO                                  */
+/* ============================================================ */
+.project-meta {
+    padding: 8rem 2rem 5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    border-top: 1px solid rgba(232, 226, 213, 0.12);
+    padding-top: 2.5rem;
+}
+
+.meta-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.meta-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #E8E2D5;
+    text-transform: uppercase;
+}
+
+.meta-sep {
+    font-family: 'Crimson Text', serif;
+    font-size: 0.85rem;
+    color: rgba(142, 142, 142, 0.3);
+    line-height: 1;
+    margin: 0.1rem 0;
+}
+
+.meta-value {
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+    color: #8E8E8E;
+    line-height: 1.6;
+}
+
+.project-meta-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-weight: 700;
+    color: #8E8E8E;
+    letter-spacing: 0.08em;
+}
+
+.meta-tags {
+    line-height: 2;
+}
+
+.meta-synopsis {
+   
+    line-height: 1.8;
+}
+
+/* ============================================================ */
+/* BLOQUE 2: CARRUSEL                                           */
+/* ============================================================ */
+.carousel-section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #0D0D0D;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+}
+
+.slide {
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    object-fit: contain;
+    display: block;
+    pointer-events: none;
+}
+
+/* ────────────────────────────────────────────
+   BOTONES DE FLECHA — personaliza aquí:
+   Cambia color, tamaño, fondo, border-radius.
+   ──────────────────────────────────────────── */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: transparent;          /* ← fondo del botón */
+    border: none;
+    color: #E8E2D5;                   /* ← color de la flecha */
+    font-size: 3rem;                  /* ← tamaño de la flecha */
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, color 0.3s ease;
+    font-family: 'Crimson Text', serif;
+}
+
+.carousel-btn:hover {
+    opacity: 1;
+    color: #73C2FB;                   /* ← color hover */
+}
+
+.carousel-btn-prev { left: 1.5rem; }
+.carousel-btn-next { right: 1.5rem; }
+
+/* Dots */
+.carousel-dots {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+.carousel-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(232, 226, 213, 0.3);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+.carousel-dot.active {
+    background: #E8E2D5;
+    transform: scale(1.4);
+}
+
+/* ============================================================ */
+/* BLOQUE 3: VIDEO YOUTUBE                                      */
+/* ============================================================ */
+.video-thumb-link {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.video-thumb-img {
+    width: 100%;
+    max-height: 90vh;
+    object-fit: cover;
+    display: block;
+}
+.video-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgba(255,255,255,0.8);
+    pointer-events: none;
+}
+
+/* ============================================================ */
+/* BLOQUE 4: TEXTO (label + subtítulo + párrafo)                */
+/* ============================================================ */
+.text-block {
+    padding: 6rem 2rem;
+    background: #0D0D0D;
+}
+
+.text-block-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: start;
+    border-top: 1px solid rgba(232, 226, 213, 0.12);
+    padding-top: 2.5rem;
+}
+
+.text-block-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #E8E2D5;
+    text-transform: uppercase;
+    padding-top: 0.25rem;
+}
+
+.text-block-label-sep {
+    display: none; /* solo visual en el grid */
+}
+
+.text-block-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.text-block-subtitle {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    color: #8E8E8E;
+}
+
+.text-block-paragraph {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.1rem;
+    color: #8E8E8E;
+    line-height: 1.9;
+    max-width: 680px;
+    
+}
+
+/* ============================================================ */
+/* BLOQUE 5: IMAGEN DESTACADA                                   */
+/* ============================================================ */
+.feature-image-section {
+    width: 100%;
+    background: #0D0D0D;
+    overflow: hidden;
+}
+
+.feature-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-height: 100vh;
+    margin: 0 auto 20px auto;
+    object-fit: cover;
+}
+
+
+.feature-image2 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-width: 200vh;
+    margin: 0 auto 20px auto;
+    object-fit: cover;
+}
+
+
+/* ============================================================ */
+/* RESPONSIVE — TABLET                                          */
+/* ============================================================ */
+@media (max-width: 1024px) {
+    .meta-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 2rem;
+    }
+
+    .slide {
+        aspect-ratio: 16/9;
+    }
+}
+
+/* ============================================================ */
+/* RESPONSIVE — MOBILE                                          */
+/* ============================================================ */
+@media (max-width: 768px) {
+    .project-meta {
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .meta-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 1.5rem;
+    }
+
+    .slide {
+        aspect-ratio: 4/3;
+    }
+
+    .carousel-btn {
+        font-size: 2rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .text-block {
+        padding: 4rem 1.5rem;
+    }
+
+    .text-block-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .meta-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slide {
+        aspect-ratio: 3/2;
+    }
+}

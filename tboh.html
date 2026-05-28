@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ════════════════════════════════════════════════
+         CAMBIA ESTO: título de la pestaña del navegador
+    ════════════════════════════════════════════════ -->
+    <title>TLACHT — El Nacimiento de Huitz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- ════════════════════════════════════════════════
+         NO CAMBIES: ruta a tu hoja de estilos principal
+    ════════════════════════════════════════════════ -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tboh.css">
+
+    <base target="_blank">
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- HEADER                                 -->
+<!-- ============================================================ -->
+<header class="header">
+    <!-- Botón volver: apunta siempre al index -->
+    <a href="index.html" class="back-btn" target="_self" data-es="← Volver" data-en="← Back">← Volver</a>
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+</header>
+
+
+<!-- ============================================================ -->
+<!-- BLOQUE 1: METADATA  -->
+<!-- ============================================================ -->
+<section class="project-meta reveal-up">
+    <div class="meta-grid">
+
+        <div class="meta-col">
+            <span class="meta-label" data-es="Proyecto" data-en="Project">Proyecto</span>
+            <span class="meta-sep">—</span>
+            <!-- ↓ CAMBIA ESTO -->
+            <span class="meta-value project-meta-title" data-es="El Nacimiento de Huitzilopochtli" data-en="The Birth of Huitzilopochtli">El Nacimiento de Huitzilopochtli</span>
+        </div>
+
+        <div class="meta-col">
+            <span class="meta-label" data-es="Año" data-en="Year">Año</span>
+            <span class="meta-sep">—</span>
+            <!-- ↓ CAMBIA ESTO -->
+            <span class="meta-value" data-es="2025" data-en="2025">2025</span>
+        </div>
+
+        <div class="meta-col">
+            <span class="meta-label" data-es="Categoría" data-en="Category">Categoría</span>
+            <span class="meta-sep">—</span>
+            <!-- ↓ CAMBIA ESTO: una categoría por línea con <br> -->
+            <span class="meta-value meta-tags" data-es="Visual Development<br>Worldbuilding<br>Animación para adultos" data-en="Visual Development<br>Worldbuilding<br>Adults animation">
+               Visual development<br>Worldbuilding<br>Animación para adultos
+            </span>
+        </div>
+
+        <div class="meta-col">
+            <span class="meta-label" data-es="Sinopsis" data-en="Synopsis">Sinopsis</span>
+            <span class="meta-sep">—</span>
+            <!-- ↓ CAMBIA ESTO -->
+            <span class="meta-value meta-synopsis" data-es="El mito del nacimiento del dios Mexica de la guerra, contado desde un enfoque aplicado a la industria del entretenimiento." data-en="The myth of the birth of the Mexica god of war, told from an approach applied to the entertainment industry.">
+                El mito del nacimiento del dios Mexica de la guerra, contado desde un enfoque aplicado a la industria del entretenimiento.            </span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- BLOQUE 2: CARRUSEL   -->
+<!-- ============================================================ -->
+<section class="carousel-section reveal-up">
+    <div class="carousel" id="projectCarousel">
+        <div class="carousel-track" id="carouselTrack">
+
+            <!-- ↓ SLIDE 1 — CAMBIA src -->
+            <div class="slide">
+                <img src="images/p1/2.png" alt="Imagen 1 del proyecto">
+            </div>
+            <!-- ↓ SLIDE 2 — CAMBIA src -->
+            <div class="slide">
+                <img src="images/p1/3.png" alt="Imagen 2 del proyecto">
+            </div>
+            <!-- ↓ SLIDE 3 — CAMBIA src -->
+            <div class="slide">
+                <img src="images/p1/5.png" alt="Imagen 3 del proyecto">
+            </div>
+            <!-- ↓ SLIDE 4 — CAMBIA src -->
+            <div class="slide">
+                <img src="images/p1/6.png" alt="Imagen 4 del proyecto">
+            </div>
+            <!-- ↓ SLIDE 5 — CAMBIA src -->
+            <div class="slide">
+                <img src="images/p1/7.png" alt="Imagen 5 del proyecto">
+            </div>
+            <!-- Para añadir más slides, copia y pega el bloque de arriba -->
+
+        </div>
+
+        <!-- Botones de flecha — personaliza el aspecto en project.css -->
+        <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Anterior">&#8249;</button>
+        <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Siguiente">&#8250;</button>
+
+        <!-- Dots de posición -->
+        <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+</section>
+
+
+<section class="text-block reveal-up">
+    <div class="text-block-container">
+
+        <!-- ↓ CAMBIA ESTO: proceso / sección -->
+        <span class="text-block-label" data-es="Orígenes" data-en="Origins">Orígenes</span>
+        <span class="text-block-label-sep">—</span>
+
+        <div class="text-block-body">
+            <!-- ↓ CAMBIA ESTO: subtítulo destacado -->
+            <h2 class="text-block-subtitle" data-es="Pasión por el mito" data-en="Passion for the myth">Pasión por el mito</h2>
+
+            <!-- ↓ CAMBIA ESTO: párrafo descriptivo -->
+            <p class="text-block-paragraph"
+               data-es="Todo comienza con el autor teniendo un gusto un tanto obsesivo por el dios Mexica de la guerra: Huitzilopochtli. A lo largo de los años estuvo probando con distintos estilizados del personaje, vagando sin rumbo alguno, eso al menos hasta diciembre 2025, donde creó una serie de frames al estilo cartoon narrando el mito del nacimiento de la deidad, como si fueran partes pausadas de una serie de CN."
+               data-en="It all began with the author having a somewhat obsessive fascination with the Aztec god of war, Huitzilopochtli. Over the years, he experimented with different stylized versions of the character, wandering aimlessly, at least until December 2025, when he created a series of cartoon-style frames narrating the myth of the god's birth, as if they were paused segments from a Cartoon Network show.">
+                Todo comienza con el autor teniendo un gusto un tanto obsesivo por el dios Mexica de la guerra: Huitzilopochtli. A lo largo de los años estuvo probando con distintos estilizados del personaje, vagando sin rumbo alguno, eso al menos hasta diciembre 2025, donde creó una serie de "frames" al estilo cartoon narrando el mito del nacimiento de la deidad, como si fueran partes pausadas de una serie de CN.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="feature-image-section reveal-up">
+    <!-- ↓ CAMBIA src y alt -->
+    <img src="images/p1/vs.jpg" alt="Imagen destacada del proyecto" class="feature-image">
+</section>
+
+
+<section class="text-block reveal-up">
+    <div class="text-block-container">
+
+        <!-- ↓ CAMBIA ESTO: proceso / sección -->
+        <span class="text-block-label" data-es="La ruta definitiva" data-en="The definitive route">La ruta definitiva</span>
+        <span class="text-block-label-sep">—</span>
+
+        <div class="text-block-body">
+            <!-- ↓ CAMBIA ESTO: subtítulo destacado -->
+            <h2 class="text-block-subtitle" data-es="Enfoque transmedia" data-en="Transmedia approach">Enfoque transmedia</h2>
+
+            <!-- ↓ CAMBIA ESTO: párrafo descriptivo -->
+            <p class="text-block-paragraph"
+               data-es="The Birth of Huitzilopochtli está construido para funcionar como una propiedad intelectual multifacética y flexible, diseñada bajo un enfoque transmedia. Más allá de encasillarse en un solo formato o género, el proyecto nace con la capacidad de expandirse hacia distintas narrativas y plataformas tales como animación, editorial o merchandising."
+               data-en="The Birth of Huitzilopochtli is designed to function as a multifaceted and flexible intellectual property, conceived with a transmedia approach. Rather than being confined to a single format or genre, the project is born with the capacity to expand into different narratives and platforms such as animation, publishing, or merchandising.">
+               The Birth of Huitzilopochtli está construido para funcionar como una propiedad intelectual multifacética y flexible, diseñada bajo un enfoque transmedia. Más allá de encasillarse en un solo formato o género, el proyecto nace con la capacidad de expandirse hacia distintas narrativas y plataformas tales como animación, editorial o merchandising.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="feature-image-section reveal-up">
+    <!-- ↓ CAMBIA src y alt -->
+    <img src="images/p1/s1.jpg" alt="Imagen destacada del proyecto" class="feature-image2">
+</section>
+
+<section class="feature-image-section reveal-up">
+    <!-- ↓ CAMBIA src y alt -->
+    <img src="images/p1/s2.jpg" alt="Imagen destacada del proyecto" class="feature-image2">
+</section>
+
+<section class="feature-image-section reveal-up">
+    <!-- ↓ CAMBIA src y alt -->
+    <img src="images/p1/s3.jpg" alt="Imagen destacada del proyecto" class="feature-image2">
+</section>
+
+<section class="text-block reveal-up">
+    <div class="text-block-container">
+
+        <!-- ↓ CAMBIA ESTO: proceso / sección -->
+        <span class="text-block-label" data-es="Personajes" data-en="Characters">Personajes</span>
+        <span class="text-block-label-sep">—</span>
+
+        <div class="text-block-body">
+            <!-- ↓ CAMBIA ESTO: subtítulo destacado -->
+            <h2 class="text-block-subtitle" data-es="Huitzilopochtli" data-en="Huitzilopochtli">Huitzilopchtli</h2>
+
+            <!-- ↓ CAMBIA ESTO: párrafo descriptivo -->
+            <p class="text-block-paragraph"
+               data-es="A través de las hojas técnicas, el diseño de Huitz se enfoca en crear una deidad de proporciones estilizadas y líneas afiladas que rompen con la simetría estática tradicional. En las Key Poses se define su dinámica de combate portando la Xiuhcoatl (reinterpretada como macuahuitl), distribuyendo el peso firmemente sobre la cadera para acentuar su postura guerrera. Por otro lado, la Expression Sheet demuestra la amplitud del personaje: un lienzo flexible diseñado para transitar orgánicamente entre la seriedad dramática de una futura serie y la expresividad cómica e irónica que demanda el tono satírico del animatic. El turnaround técnico consolida su estructura tridimensional lista para animación."
+               data-en="Through the technical sheets, Huitz's design focuses on creating a deity with stylized proportions and sharp lines that break with traditional static symmetry. The key poses define its combat dynamics, wielding the Xiuhcoatl (reinterpreted as a macuahuitl), distributing the weight firmly over the hips to accentuate its warrior stance. On the other hand, the expression sheet demonstrates the character's breadth: a flexible canvas designed to organically transition between the dramatic seriousness of a future series and the comedic and ironic expressiveness demanded by the animatic's satirical tone. The technical turnaround solidifies its three-dimensional structure, ready for animation.">
+                A través de las hojas técnicas, el diseño de Huitz se enfoca en crear una deidad de proporciones estilizadas y líneas afiladas que rompen con la simetría estática tradicional. En las Key Poses se define su dinámica de combate portando la Xiuhcoatl (reinterpretada como macuahuitl), distribuyendo el peso firmemente sobre la cadera para acentuar su postura guerrera. Por otro lado, la Expression Sheet demuestra la amplitud del personaje: un lienzo flexible diseñado para transitar orgánicamente entre la seriedad dramática de una futura serie y la expresividad cómica e irónica que demanda el tono satírico del animatic. El Turnaround técnico consolida su estructura tridimensional lista para animación.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="feature-image-section reveal-up">
+    <!-- ↓ CAMBIA src y alt -->
+    <img src="images/p1/s4.jpg" alt="Imagen destacada del proyecto" class="feature-image2">
+</section>
+
+<section class="text-block reveal-up">
+    <div class="text-block-container">
+
+        <!-- ↓ CAMBIA ESTO: proceso / sección -->
+        <span class="text-block-label" data-es="Personajes" data-en="Characters">Personajes</span>
+        <span class="text-block-label-sep">—</span>
+
+        <div class="text-block-body">
+            <!-- ↓ CAMBIA ESTO: subtítulo destacado -->
+            <h2 class="text-block-subtitle" data-es="Coyolxauhqui" data-en="Coyolxauhqui">Coyolxauhqui</h2>
+
+            <!-- ↓ CAMBIA ESTO: párrafo descriptivo -->
+            <p class="text-block-paragraph"
+               data-es="Diseño construido bajo la premisa de agilidad contra fuerza bruta. Su estructura corporal adopta un centro de gravedad bajo para movimientos rápidos y evasivos en combate, complementados por el uso del tepoztopilli (arma de largo alcance para poder hacer frente a Huitzilopochtli). Las hojas respetan la iconografía del mito de la deidad caída de forma honesta, sumando que Coyol no está diseñada para verse linda mientras pelea, es feroz y salvaje.
+            </p>"
+               data-en="The design is built on the premise of agility versus brute force. Its body structure adopts a low center of gravity for quick and evasive movements in combat, complemented by the use of the tepoztopilli (a long-range weapon to confront Huitzilopochtli). The blades faithfully respect the iconography of the fallen deity myth, and Coyol is not designed to look cute while fighting; she is fierce and savage.">
+                Diseño construido bajo la premisa de agilidad contra fuerza bruta. Su estructura corporal adopta un centro de gravedad bajo para movimientos rápidos y evasivos en combate, complementados por el uso del tepoztopilli (arma de largo alcance para poder hacer frente a Huitzilopochtli). Las hojas respetan la iconografía del mito de la deidad caída de forma honesta, sumando que Coyol no está diseñada para verse linda mientras pelea, es feroz y salvaje.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- BLOQUE 3: VIDEO DE YOUTUBE (ANCHO COMPLETO)                 -->
+<!-- ============================================================ -->
+<section class="video-section reveal-up">
+    <a href="https://youtu.be/xAvmqMiIA_g" target="_blank" class="video-thumb-link">
+        <img src="images/p1/m1.png" alt="Ver video" class="video-thumb-img">
+        <div class="video-play-btn">&#9654;</div>
+    </a>
+</section>
+
+
+<section class="text-block reveal-up">
+    <div class="text-block-container">
+
+        <!-- ↓ CAMBIA ESTO: proceso / sección -->
+        <span class="text-block-label" data-es="El futuro" data-en="The future">El futuro</span>
+        <span class="text-block-label-sep">—</span>
+
+        <div class="text-block-body">
+            <!-- ↓ CAMBIA ESTO: subtítulo destacado -->
+            <h2 class="text-block-subtitle" data-es="El animatic" data-en="The animatic">El animatic</h2>
+
+            <!-- ↓ CAMBIA ESTO: párrafo descriptivo -->
+            <p class="text-block-paragraph"
+               data-es="Al fusionar los storyboards con una propuesta sonora enérgica (Mama Sid Knock You Out de LL COOL J), el animatic se convierte en el núcleo del proyecto actualmente pues no se limita a un solo género, sino que funciona como una propiedad intelectual versátil, con el potencial de moldearse hacia la comedia de acción o la narrativa seriada de entretenimiento."
+               data-en="By merging storyboards with an energetic sound design (Mama Sid Knock You Out by LL COOL J), the animatic becomes the core of the project now, as it is not limited to a single genre, but functions as a versatile intellectual property, with the potential to be molded into action comedy or serialized entertainment narratives.">
+                Al fusionar los storyboards con una propuesta sonora enérgica (Mama Sid Knock You Out de LL COOL J), el animatic se convierte en el núcleo del proyecto actualmente pues no se limita a un solo género, sino que funciona como una propiedad intelectual versátil, con el potencial de moldearse hacia la comedia de acción o la narrativa seriada de entretenimiento.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- FOOTER                                   -->
+<!-- ============================================================ -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="footer-info">
+            <p class="footer-text" data-es="© 2026 Todos los derechos reservados." data-en="© 2026 All rights reserved.">
+                © 2026 Todos los derechos reservados.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="tboh.js"></script>
+</body>
+</html>

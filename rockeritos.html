@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ════════════════════════════════════════════════
+         CAMBIA ESTO: título de la pestaña del navegador
+    ════════════════════════════════════════════════ -->
+    <title>TLACHT — Rockeritos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- ════════════════════════════════════════════════
+         NO CAMBIES: ruta a tu hoja de estilos principal
+    ════════════════════════════════════════════════ -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rockeritos.css">
+
+    <base target="_blank">
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- HEADER                                 -->
+<!-- ============================================================ -->
+<header class="header">
+    <!-- Botón volver: apunta siempre al index -->
+    <a href="index.html" class="back-btn" target="_self" data-es="← Volver" data-en="← Back">← Volver</a>
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+</header>
+
+
+<!-- ============================================================ -->
+<!-- BLOQUE 1: METADATA  -->
+<!-- ============================================================ -->
+<section class="project-meta reveal-up">
+    <div class="meta-grid">
+
+        <div class="meta-col">
+            <span class="meta-label" data-es="Proyecto" data-en="Project">Proyecto</span>
+            <span class="meta-sep">—</span>
+            <!-- ↓ CAMBIA ESTO -->
+            <span class="meta-value project-meta-title" data-es="Rockeritos" data-en="Rockeritos">Rockeritos</span>
+        </div>
+
+        <div class="meta-col">
+            <span class="meta-label" data-es="Año" data-en="Year">Año</span>
+            <span class="meta-sep">—</span>
+            <!-- ↓ CAMBIA ESTO -->
+            <span class="meta-value" data-es="2025" data-en="2025">2025</span>
+        </div>
+
+        <div class="meta-col">
+            <span class="meta-label" data-es="Categoría" data-en="Category">Categoría</span>
+            <span class="meta-sep">—</span>
+            <!-- ↓ CAMBIA ESTO: una categoría por línea con <br> -->
+            <span class="meta-value meta-tags" data-es="Visual development<br>Worldbuilding<br>Propiedad Intelectual<br>Diseño de producto<br>Animación para adultos" data-en="Visual development<br>Worldbuilding<br>Intellectual Property<br>Product Design<br>Adult Animation">
+               Visual development<br>Worldbuilding<br>Propiedad Intelectual<br>Diseño de producto<br>Animación para adultos
+            </span>
+        </div>
+
+        <div class="meta-col">
+            <span class="meta-label" data-es="Sinopsis" data-en="Synopsis">Sinopsis</span>
+            <span class="meta-sep">—</span>
+            <!-- ↓ CAMBIA ESTO -->
+            <span class="meta-value meta-synopsis" data-es="En un orden mundial que utiliza la música sacra como mecanismo de control mental, el rock es el último bastión de la profanidad. " data-en="In a world order that uses sacred music as a mind control mechanism, rock is the last bastion of profanity.">
+                En un orden mundial que utiliza la música sacra como mecanismo de control mental, el rock es el último bastión de la profanidad.          </span>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="feature-image-section reveal-up">
+    <!-- ↓ CAMBIA src y alt -->
+    <img src="images/p2/logo.jpg" alt="Imagen destacada del proyecto" class="feature-image">
+</section>
+
+<section class="text-block reveal-up">
+    <div class="text-block-container">
+
+        <!-- ↓ CAMBIA ESTO: proceso / sección -->
+        <span class="text-block-label" data-es="Rockeritos" data-en="Rockeritos">Rockeritos</span>
+        <span class="text-block-label-sep">—</span>
+
+        <div class="text-block-body">
+            <!-- ↓ CAMBIA ESTO: subtítulo destacado -->
+            <h2 class="text-block-subtitle" data-es="Sobre el proyecto" data-en="About the project">Sobre el proyecto</h2>
+
+            <!-- ↓ CAMBIA ESTO: párrafo descriptivo -->
+            <p class="text-block-paragraph"
+               data-es="Rockeritos es un viaje enérgico, satírico y rebelde que utiliza la comedia y la música como el motor de su narrativa. Es un universo fuertemente inspirado en la cultura mazatleca y mexicana, diseñado para expandirse a través de plataformas digitales, animación, merchandising y experiencias interactivas, demostrando cómo la identidad gráfica y el diseño de personajes pueden transformar el concepto de la muerte y lo sobrenatural en una celebración de libertad y contracultura urbana.
+"
+               data-en="Rockeritos is an energetic, satirical, and rebellious journey that uses comedy and music to drive its narrative. It's a universe heavily inspired by Mazatlán and Mexican culture, designed to expand across digital platforms, animation, merchandising, and interactive experiences, demonstrating how graphic identity and character design can transform the concept of death and the supernatural into a celebration of freedom and urban counterculture.">
+               Rockeritos es un viaje enérgico, satírico y rebelde que utiliza la comedia y la música como el motor de su narrativa. Es un universo fuertemente inspirado en la cultura mazatleca y mexicana, diseñado para expandirse a través de plataformas digitales, animación, merchandising y experiencias interactivas, demostrando cómo la identidad gráfica y el diseño de personajes pueden transformar el concepto de la muerte y lo sobrenatural en una celebración de libertad y contracultura urbana.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="carousel-section reveal-up">
+    <div class="carousel" id="projectCarousel">
+        <div class="carousel-track" id="carouselTrack">
+
+            <!-- ↓ SLIDE 1 — CAMBIA src -->
+            <div class="slide">
+                <img src="images/p2/s1.jpg" alt="Imagen 1 del proyecto">
+            </div>
+            <!-- ↓ SLIDE 2 — CAMBIA src -->
+            <div class="slide">
+                <img src="images/p2/s2.jpg" alt="Imagen 2 del proyecto">
+            </div>
+            <!-- ↓ SLIDE 3 — CAMBIA src -->
+            <div class="slide">
+                <img src="images/p2/s3.jpg" alt="Imagen 3 del proyecto">
+            </div>
+            <!-- ↓ SLIDE 4 — CAMBIA src -->
+            <div class="slide">
+                <img src="images/p2/s4.jpg" alt="Imagen 4 del proyecto">
+            </div>
+            <!-- ↓ SLIDE 5 — CAMBIA src -->
+            <div class="slide">
+                <img src="images/p2/s5.jpg" alt="Imagen 5 del proyecto">
+            </div>
+            <!-- Para añadir más slides, copia y pega el bloque de arriba -->
+
+        </div>
+
+        <!-- Botones de flecha — personaliza el aspecto en project.css -->
+        <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Anterior">&#8249;</button>
+        <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Siguiente">&#8250;</button>
+
+        <!-- Dots de posición -->
+        <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+</section>
+
+
+<section class="text-block reveal-up">
+    <div class="text-block-container">
+
+        <!-- ↓ CAMBIA ESTO: proceso / sección -->
+        <span class="text-block-label" data-es="El futuro" data-en="The future">El futuro</span>
+        <span class="text-block-label-sep">—</span>
+
+        <div class="text-block-body">
+            <!-- ↓ CAMBIA ESTO: subtítulo destacado -->
+            <h2 class="text-block-subtitle" data-es="Trabajo en proceso" data-en="Work in progress">Trabajo en proceso</h2>
+
+            <!-- ↓ CAMBIA ESTO: párrafo descriptivo -->
+            <p class="text-block-paragraph"
+               data-es="Actualmente, este proyecto se encuentra en su etapa inicial de desarrollo visual, concentrando toda su fuerza en la conceptualización y el diseño de personajes a través de sus hojas técnicas. Este es el ADN gráfico del proyecto—la exploración de siluetas, actitud y estética—, sentando las bases sólidas de un universo expansivo que continúa en proceso de construcción. Este lineup es apenas el primer acorde de una propiedad intelectual diseñada para evolucionar hacia narrativas y plataformas mucho más complejas."
+               data-en="Currently, this project is in its initial visual development stage, focusing its efforts on character conceptualization and design through character sheets. This is the project's graphic DNA—the exploration of silhouettes, attitude, and aesthetics—laying the solid foundation for an expansive universe that continues to be built. This lineup is just the first chord of an intellectual property designed to evolve toward much more complex narratives and platforms.">
+                Actualmente, este proyecto se encuentra en su etapa inicial de desarrollo visual, concentrando toda su fuerza en la conceptualización y el diseño de personajes a través de sus hojas técnicas. Este es el ADN gráfico del proyecto—la exploración de siluetas, actitud y estética—, sentando las bases sólidas de un universo expansivo que continúa en proceso de construcción. Este lineup es apenas el primer acorde de una propiedad intelectual diseñada para evolucionar hacia narrativas y plataformas mucho más complejas.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- FOOTER                                   -->
+<!-- ============================================================ -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="footer-info">
+            <p class="footer-text" data-es="© 2026 Todos los derechos reservados." data-en="© 2026 All rights reserved.">
+                © 2026 Todos los derechos reservados.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="rockeritos.js"></script>
+</body>
+</html>
