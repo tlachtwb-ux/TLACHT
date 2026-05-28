@@ -17,7 +17,7 @@ function initLoader() {
     };
 
     let count = 0;
-    const minDuration = 3000;
+    const minDuration = 2000;
     const startTime = Date.now();
 
     function updateCounter() {
@@ -101,8 +101,8 @@ function initHeroMouseParallax() {
     /* ============================================================ */
     // Intensidad de movimiento (px)
     const backIntensity = 3;      // Fondo - MUY POCO
-    const midIntensity = 8;       // Media - poco
-    const frontIntensity = 8;      // Frontal - un poco más
+    const midIntensity = 5;       // Media - poco
+    const frontIntensity = 14;      // Frontal - un poco más
 
     // ESCALA anti-corte: cuanto más se mueve, más grande la escala
     const backScale = 1.05;         // Fondo: 5% más grande
